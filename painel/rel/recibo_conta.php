@@ -10,6 +10,7 @@ if (@count($res) > 0) {
   $pessoa = $res[0]['cliente'];
   $valor = $res[0]['subtotal'];
   $data_pgto = $res[0]['data_pgto'];
+  
 
   $nome_pessoa = 'Sem Registro';
 
@@ -87,6 +88,7 @@ if (@count($res) > 0) {
 
     .receipt-section {
       margin-top: 10px;
+      margin-left: 30px;
     }
 
     .receipt-footer {
@@ -112,15 +114,15 @@ if (@count($res) > 0) {
 
       .direita {
         position: absolute;
-        right: 30px;
+        right: 60px;
       }
 
 
       .imagem {
-        width: 20%;
+        width: 14%;
         position: absolute;
-        left: 15px;
-        top: 30px;
+        left: 26px;
+        top: 20px;
 
       }
   </style>
@@ -149,15 +151,15 @@ if (@count($res) > 0) {
 
     </div>
 
-
+      <hr>
 
     <div class="clearfix"></div>
     <br>
 
     <div class="receipt-section">
       <span><big>
-          Recebi(emos) de <b><?php echo $nome_pessoa ?></b> a quantia de R$ <b><?php echo $valorF ?> </b>
-          (<?php echo valor_por_extenso($valor_extenso1) ?> <?php echo $valor_extenso2 ?>) na data
+         Recebi(emos) de <b><?php echo $nome_pessoa ?></b> a quantia de R$ <b><?php echo $valorF ?> </b>
+          (<?php echo valor_por_extenso($valor_extenso1) ?> <?php echo $valor_extenso2 ?>) no dia
           <b><?php echo $data_pgtoF ?></b> correspondente a(ao) <?php echo $descricao ?>.
 
         </big></span>
@@ -184,6 +186,7 @@ if (@count($res) > 0) {
     <div align="center">
       <?php echo mb_strtoupper($nome_sistema) ?>
       - <?php echo $telefone_sistema ?>
+     
     </div>
 
   </div>
