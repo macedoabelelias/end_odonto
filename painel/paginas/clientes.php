@@ -196,10 +196,12 @@ if (@$clientes == 'ocultar') {
 						</div>
 
 						<div class="col-md-2 mb-2">
-							<label>Sexo</label>
+							<label>Gênero:</label>
 							<select class="form-select" id="sexo" name="sexo">
-								<option value="M">Masculino</option>
-								<option value="F">Feminino</option>								
+								<option value="M">Cis Masculino</option>
+								<option value="F">Cis Feminino</option>
+								<option value="T">Trans</option>
+								<option value="O">Outros</option>								
 							</select>
 						</div>
 

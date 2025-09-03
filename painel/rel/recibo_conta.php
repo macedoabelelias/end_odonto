@@ -13,6 +13,7 @@ if (@count($res) > 0) {
   
 
   $nome_pessoa = 'Sem Registro';
+  $cpf_pessoa = 'Sem Registro';
 
   $query2 = $pdo->query("SELECT * FROM clientes where id = '$pessoa'");
   $res2 = $query2->fetchAll(PDO::FETCH_ASSOC);
@@ -20,6 +21,12 @@ if (@count($res) > 0) {
     $nome_pessoa = $res2[0]['nome'];
 
   }
+
+   if (@count($res2) > 0) {
+    $cpf_pessoa = $res2[0]['cpf'];
+
+  }
+
 
 
   $valorF = @number_format($valor, 2, ',', '.');
@@ -87,7 +94,7 @@ if (@count($res) > 0) {
     }
 
     .receipt-section {
-      margin-top: 10px;
+      margin-top: 20px;
       margin-left: 30px;
     }
 
@@ -114,7 +121,7 @@ if (@count($res) > 0) {
 
       .direita {
         position: absolute;
-        right: 60px;
+        right: 65px;
       }
 
 
@@ -158,7 +165,7 @@ if (@count($res) > 0) {
 
     <div class="receipt-section">
       <span><big>
-         Recebi(emos) de <b><?php echo $nome_pessoa ?></b> a quantia de R$ <b><?php echo $valorF ?> </b>
+         Recebi(emos) de <b><?php echo $nome_pessoa ?></b>, CPF nº: <?php echo $cpf_pessoa ?> a quantia de R$ <b><?php echo $valorF ?> </b>
           (<?php echo valor_por_extenso($valor_extenso1) ?> <?php echo $valor_extenso2 ?>) no dia
           <b><?php echo $data_pgtoF ?></b> correspondente a(ao) <?php echo $descricao ?>.
 
