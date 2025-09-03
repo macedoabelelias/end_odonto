@@ -131,10 +131,10 @@ if($marca_dagua == 'Sim'){ ?>
 </div>
 <div id="content" style="margin-top: 70px;">
 <div style="font-size: 15px;">
-	<p style="margin-left:60px">Atesto para os devidos fins que o Sr(a) <b><?php echo $nome_paciente ?></b> portador 
-	do CPF nº: <?php echo $cpf_paciente ?> esteve sob </p>cuidados profissionais no dia __/__/____, 
-	e deverá se afastar de suas atividades pelo período de <b><?php echo $dias ?> dias </b> por  <p>motivo de 
-		<?php echo $motivo ?></p>
+	<p style="margin-left:90px">Atesto para os devidos fins que o Sr(a) <b><?php echo $nome_paciente ?></b> portador 
+	do CPF nº: </p><?php echo $cpf_paciente ?> esteve sob cuidados profissionais no dia __/__/____, 
+	e deverá se afastar de suas atividades <br><br>pelo período de <b><?php echo $dias ?> dias </b> por motivo de 
+		<?php echo $motivo ?>
 </div>
 <?php if($obs != ""){ ?>
 <div style="margin-top: 50px; border:1px solid #000; font-size: 14px; padding:5px">

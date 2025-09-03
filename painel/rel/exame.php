@@ -182,7 +182,7 @@ if($marca_dagua == 'Sim'){ ?>
 			</thead>
 		</table>
 		
-		<div align="left" style="margin-top: 25px; margin-bottom: 10px; border-bottom: 1px solid #000; font-size:12px"><b>PEDIDO EXAME RADIOLÓGICO</b></div>
+		<div align="left" style="margin-top: 25px; margin-bottom: 10px; border-bottom: 1px solid #000; font-size:12px"><b>SOLICITAÇÃO DE EXAMES</b></div>
 </div>
 <div id="footer" class="row">
 <hr style="margin-bottom: 0;">

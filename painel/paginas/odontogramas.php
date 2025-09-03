@@ -180,8 +180,8 @@ if (@$odontogramas == 'ocultar') {
 							<label>Ação</label>
 							<select name="acao" id="acao" class="form-select">								
 								<option value="carie">Cárie, Canal, outros...</option>
-								<option value="extraidos">Extraído</option>
-								<option value="extrair">Para Extrair</option>
+								<option value="extraidos">Para Extrair</option>
+								<option value="extrair">Extraído</option>
 								<option value="tratados">Tratado / Finalizado</option>
 							</select>
 						</div>
